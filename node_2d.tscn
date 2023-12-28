@@ -1,0 +1,95 @@
+[gd_scene load_steps=7 format=3 uid="uid://dbe7cn7x0tddv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hti40"]
+size = Vector2(900, 901.725)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5ldw1"]
+
+[sub_resource type="Gradient" id="Gradient_8jvdj"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oq5m0"]
+gradient = SubResource("Gradient_8jvdj")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ssu4d"]
+size = Vector2(21, 12)
+
+[sub_resource type="BoxMesh" id="BoxMesh_onq6g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0.499985, -1.5)
+scale = Vector2(929, 569)
+zoom = Vector2(0.5, 0.5)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(9, -1)
+scale = Vector2(1, 1.333)
+shape = SubResource("RectangleShape2D_hti40")
+debug_color = Color(0, 0.6, 0.690196, 0.419608)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D"]
+visible = false
+position = Vector2(1.2517e-06, -9.44436e-05)
+scale = Vector2(900, 1202)
+mesh = SubResource("BoxMesh_5ldw1")
+texture = SubResource("GradientTexture2D_oq5m0")
+
+[node name="StaticBody2D_Maze" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D_Maze"]
+position = Vector2(-294, -527)
+scale = Vector2(10, 2)
+shape = SubResource("RectangleShape2D_ssu4d")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(-316, -322)
+scale = Vector2(250, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D9" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(25, -322)
+scale = Vector2(210, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(354, -322)
+scale = Vector2(210, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(-394.5, -163)
+scale = Vector2(93, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(103, -163)
+scale = Vector2(710, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D8" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(-249.25, -3)
+scale = Vector2(386.5, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(267, -3)
+scale = Vector2(382, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(380, 148)
+scale = Vector2(166, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(-135.25, 148)
+scale = Vector2(614.5, 25)
+mesh = SubResource("BoxMesh_onq6g")
+
+[node name="MeshInstance2D10" type="MeshInstance2D" parent="StaticBody2D_Maze"]
+position = Vector2(-335, 278)
+scale = Vector2(210, 25)
+mesh = SubResource("BoxMesh_onq6g")
